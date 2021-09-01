@@ -47,8 +47,6 @@ def mainFunc():
                     t7 = time.time()
                     if isInt(multiplier):
                         multiplier = int(multiplier)
-                        
-
                         time_taken_by_computer = (t2-t1)+(t4-t3)+(t6-t5)
                         time_taken_by_user = (t5-t4)+(t3-t2)+(t7-t6)
                         break
@@ -70,7 +68,7 @@ def mainFunc():
                             run = False
             if found == False:
                 print("\nno solution between 0 and 1000.")
-            
+                
             t9 = time.time()
             print(f"\nTime taken by user : {str(round(time_taken_by_user, 4))} seconds\nTime taken by CPU : {str(round(time_taken_by_computer+(t9-t8), 4))} seconds")
             cmd = input("\nPress \"n\" to do other calculation and any other key to quit : ")
@@ -85,6 +83,4 @@ def mainFunc():
 
         except ValueError:
             num = False
-
-
 mainFunc()
